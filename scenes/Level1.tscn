@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://ccncye02e1hnj"]
+[gd_scene load_steps=6 format=3 uid="uid://ccncye02e1hnj"]
 
 [ext_resource type="PackedScene" uid="uid://cauwgxnjiok8x" path="res://scenes/Player.tscn" id="1_8hete"]
 [ext_resource type="PackedScene" uid="uid://cbeyepvgef00g" path="res://scenes/Wall.tscn" id="2_ov8vp"]
+[ext_resource type="PackedScene" uid="uid://dd58um8tmblwo" path="res://scenes/Professor.tscn" id="3_ococg"]
 
 [sub_resource type="Gradient" id="Gradient_ffc83"]
 offsets = PackedFloat32Array(0.519481)
@@ -20,6 +21,7 @@ offset_bottom = 7511.0
 texture = SubResource("GradientTexture1D_0eyax")
 
 [node name="Player" parent="." instance=ExtResource("1_8hete")]
+position = Vector2(523, 1122)
 
 [node name="Wall" parent="." instance=ExtResource("2_ov8vp")]
 position = Vector2(598, 0)
@@ -38,3 +40,14 @@ scale = Vector2(19.84, 1)
 position = Vector2(-159, 757)
 rotation = 1.57079
 scale = Vector2(19.84, 1)
+
+[node name="Wall5" parent="." instance=ExtResource("2_ov8vp")]
+position = Vector2(130, 462)
+scale = Vector2(7.58082, 53.8077)
+
+[node name="Wall6" parent="." instance=ExtResource("2_ov8vp")]
+position = Vector2(992, 357)
+scale = Vector2(9.40079, 74.8767)
+
+[node name="Professor" parent="." instance=ExtResource("3_ococg")]
+position = Vector2(1207, 1118)

@@ -1,15 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cauwgxnjiok8x"]
+[gd_scene load_steps=4 format=3 uid="uid://cauwgxnjiok8x"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_frifv"]
+[ext_resource type="Texture2D" uid="uid://yymx27pph7jq" path="res://assets/player.png" id="2_01ldj"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_arqjb"]
-
-[sub_resource type="Gradient" id="Gradient_cewrb"]
-offsets = PackedFloat32Array(0.391566)
-colors = PackedColorArray(0.625575, 1.43189e-06, 5.77569e-07, 1)
-
-[sub_resource type="GradientTexture1D" id="GradientTexture1D_wm1jj"]
-gradient = SubResource("Gradient_cewrb")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3qyxu"]
+size = Vector2(32, 64.895)
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(216, 326)
@@ -17,10 +12,11 @@ script = ExtResource("1_frifv")
 speed = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_arqjb")
+position = Vector2(0, 3.05176e-05)
+scale = Vector2(1, 0.986209)
+shape = SubResource("RectangleShape2D_3qyxu")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.078125, 30)
-texture = SubResource("GradientTexture1D_wm1jj")
+texture = ExtResource("2_01ldj")
 
 [node name="Camera2D" type="Camera2D" parent="."]

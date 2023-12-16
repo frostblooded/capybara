@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dd58um8tmblwo"]
+
+[ext_resource type="Texture2D" uid="uid://1i4n47fm6fch" path="res://assets/professor.png" id="1_gtu84"]
+
+[node name="Professor" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_gtu84")

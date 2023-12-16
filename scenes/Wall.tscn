@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cbeyepvgef00g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jra70"]
-size = Vector2(76, 10)
+size = Vector2(77, 10)
 
 [sub_resource type="Gradient" id="Gradient_y4rxf"]
 offsets = PackedFloat32Array(0.403614)
